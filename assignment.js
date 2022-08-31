@@ -6,7 +6,7 @@ function feetToMile(feetValue){
     return Mile;
     }
     else{
-        return "Put Positive Value feet can not be nagetive"
+        return "Put Positive Value feet can not be negative"
     }
 }
 var mileResult=feetToMile(800);
@@ -20,7 +20,7 @@ function woodCalculator(orderTable,orderChair,orderBed){
     return totalWood;
     }
     else{
-        return "Order Cannot Be nagetive"
+        return "Order Cannot Be negative"
     }
 }
 
@@ -36,20 +36,23 @@ console.log(needWood);
 
 
 //tinyFriend
-function tinytiny (tinyFriend){
-var max=0;
-for(i=0;i<tinyFriend.length;i++){
-    //console.log(tinyFriend[i.length]);
-if(tinyFriend[i].length>max)
-max=tinyFriend[i].length
+//var friendName=["Alu","Golooo","Itttuuu","Jo"]
+
+//var array=["Joy",'abcd',"abcdgf","jo","j"];
+
+function tiny(name){
+    var ti=name[0];
+    for(i=0;i<name.length;i++){
+        if(name[i].length<ti.length){
+            ti=name[i];
+        }
+    }
+    console.log(ti);
 }
-return max[i];
-}
 
 
- var friendName=["Alu","Golooo","Itttuuu","Jo"]
-//console.log(friendName.length)
-var result=tinytiny(friendName);
-console.log(result);
 
+
+var array=["Joy",'abcd',"abcdgf","jo","j"];
+tiny(array);
 
